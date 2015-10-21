@@ -1,0 +1,25 @@
+#!/bin/bash
+for i in $(seq 1 2)
+do
+echo "(ºwº)"
+sleep 0.5
+clear
+echo "(>w<)"
+sleep 0.5
+clear
+echo "  <<< (ewe)"
+sleep 0.5
+clear
+echo "  (ewe)"
+sleep 0.5
+clear
+echo "(ewe) >>>"
+sleep 0.5
+clear
+echo "(pwq)"
+sleep 0.5
+clear
+echo "\(ºwº)/"
+sleep 0.5
+clear
+done
