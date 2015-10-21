@@ -1,0 +1,65 @@
+#!/bin/bash
+tput sgr0
+tput setf 5
+
+echo "~you chose kawaii theme~"
+echo "かわいい!"
+sleep 1
+clear
+echo "* 一"
+echo "loading"
+sleep 0.5
+clear
+echo "** 二"
+echo "loading"
+sleep 0.5
+clear
+echo "*** 三"
+echo "loading"
+sleep 0.5
+clear
+echo "+~*You are so kawaii now!*~+"
+cd com
+cat heart.txt
+sleep 1
+./gif2
+cd ..
+
+echo "こんにちは!"
+echo "~welcome, enjoy-joy, friend.~"
+echo "******************************************************************"
+echo "~if you want to change this cute theme now, press 1. (;_;)" 
+echo "~if you want to see ascii kawaii: 2 (>w<)"
+echo "~if you want to continue working on your new directory, press 6 (ºwº)"
+echo "******************************************************************"
+
+read -p"your +~*option*~+ is: " OPT
+
+
+
+case $OPT in
+	1) cd ..
+	   ./ini 
+           ;;
+	2) cd com
+           cat cats.txt 
+           cd ..;;
+	3) cd ..
+	   echo "*this is how your working folder is now (ewe):"
+	   file="foldname.txt" 
+	   name=$(cat "$file")  
+	   cd $name	
+	   ls
+	   file2="username.txt" 
+	   name2=$(cat "$file2")
+	   echo "WELCOME FRIEND (>0<)>"
+           echo $name2
+	   echo "*if you want to keep working on it please write 'cd nameofyourfolder'"
+	   ;;
+
+	*) echo "NOPE NOPE!WROGN NUMBER"
+	   sleep 2
+	   
+	   ./kawaii
+            ;;
+esac
