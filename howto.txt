@@ -1,0 +1,16 @@
+
+this is a how to use your welcomemaster:
+***********************************************************
+1- if you haven't used this program before, choose "YES" in 
+'is this your first time?'
+***********************************************************
+2- you can choose your theme, but it won't last everyday, 
+don't worry. It's just temporary, when you close your 
+terminal and open it again it will be back to normal.
+***********************************************************
+3- this have been only tested on UBUNTU 14.04.
+***********************************************************
+4- have fun, if you know how to, try to create new themes 
+and make this code better. But share it please!
+***********************************************************
+***********************************************************
