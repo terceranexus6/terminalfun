@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "*****************************************************"
+echo "the options are: "
+echo "1) cyberpunk"
+echo "2) kawaii"
+echo "3) happy"
+echo "*****************************************************"
+read -p"choose your option: " OPTION
+
+cd salu
+case $OPTION in
+	1) ./cyberpunk ;;
+	2) ./kawaii ;;
+	3) ./happy ;;
+
+	*) echo "INVALID NUMBER!"
+	  ./ini ;;
+esac
