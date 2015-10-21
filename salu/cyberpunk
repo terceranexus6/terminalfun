@@ -1,0 +1,66 @@
+#!/bin/bash
+
+tput setf 2
+tput bold
+
+echo "you chose cyberpunk theme"
+sleep 1
+clear
+echo "."
+echo "loading"
+sleep 0.5
+clear
+echo ".."
+echo "loading"
+sleep 0.5
+clear
+echo ".."
+echo "loading"
+sleep 0.5
+clear
+echo "You are entering the matrix..."
+sleep 0.5
+cd com
+./gif1
+cd ..
+clear
+cd com
+cat neo.txt
+sleep 2
+cd ..
+clear
+
+echo "welcome, enjoy, user."
+echo "******************************************************************"
+echo "if you want to change theme now, press 1." 
+echo "if you want to see ascii surprise: 2"
+echo "if you want to continue working on your new directory, press 3"
+echo "******************************************************************"
+
+read -p"your option is: " OPT
+
+
+
+case $OPT in
+	1) cd ..
+	   ./ini 
+           ;;
+	2) cd com
+	   cat roy.txt 
+           cd ..;;
+	3) cd ..
+	   echo "this is the state of your working folder:"
+	   file="foldname.txt" 
+	   name=$(cat "$file")  
+	   cd $name	
+	   ls
+	   file2="username.txt" 
+	   name2=$(cat "$file2")
+	   echo "WELCOME MASTER>"
+           echo $name2
+	   echo "*if you want to keep working on it please write 'cd nameofyourfolder'"
+	   ;;
+	*) echo "INVALID INPUT"
+	   sleep 2
+           ./cyberpunk ;;
+esac
