@@ -1,0 +1,19 @@
+#!/bin/bash
+
+read -p "Set the name of the working folder you want to create: " FOLD
+
+touch foldname.txt
+echo $FOLD >> foldname.txt
+mkdir $FOLD
+cd $FOLD
+
+read -p "What is your name? " NAME
+
+touch username.txt
+echo $NAME >> username.txt
+
+cd ..
+
+echo "remember it's temporary. Enjoy"
+
+./ini
