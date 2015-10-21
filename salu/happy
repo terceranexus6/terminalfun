@@ -1,0 +1,60 @@
+
+read -p"your option is! : " OPT
+
+
+echo "choose a color to keep working with:" 
+tput setf 4
+echo "1- red"
+tput setf 3
+echo "2- blue"
+tput setf 2
+echo "3- green"
+tput setf 6
+echo "4- yellow"
+tput setf 5
+echo "5- pink"
+read -p"your option is: " COLOR
+
+if [ $COLOR = 1 ]
+then
+tput setf 4
+elif [ $COLOR = 2 ]
+then
+tput setf 3
+elif [ $COLOR = 3 ]
+then
+tput setf 2
+elif [ $COLOR = 4 ]
+then
+tput setf 6
+elif [ $COLOR = 5 ]
+then
+tput setf 5
+fi
+
+case $OPT in
+	1) cd ..
+	   ./ini 
+           ;;
+	2) cd com
+           cat happypy.txt	
+           cd .. ;;   
+        3) echo "this is how your working folder is now ^^:"
+	   cd ..
+	   file="foldname.txt" 
+	   name=$(cat "$file")  
+	   cd $name	
+	   ls
+	   file2="username.txt" 
+	   name2=$(cat "$file2")
+	   echo "WELCOME! :) >"
+           echo $name2
+	   echo "if you want to keep working on it please write 'cd nameofyourfolder'"
+	   ;;
+
+	*) echo "NOPE! sprry pal, WROGN NUMBER"
+	   sleep 2
+	   
+	   ./happy
+            ;;
+esac
