@@ -1,0 +1,28 @@
+#!/bin/bash
+
+chmod u+x ini
+chmod u+x howto
+chmod u+x sett
+cd salu
+chmod u+x cyberpunk
+chmod u+x kawaii
+chmod u+x water
+chmod u+x happy
+chmod u+x gif1
+chmod u+x gif2
+
+cd .. 
+cat howto
+echo "***********************************************"
+echo "is this your first time using welcomemaster?" 
+echo "1)YES"  
+echo "2)NO"
+echo "***********************************************"
+
+read -p"Enter your option: " REPLY
+
+case $REPLY in
+	1) ./sett ;;
+	2) ./ini ;;
+	*) echo "INVALID NUMBER!" ;;
+esac
